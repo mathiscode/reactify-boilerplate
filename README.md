@@ -1,4 +1,5 @@
 # Reactify Boilerplate
+[![Build Status](https://travis-ci.org/mathiscode/reactify-boilerplate.svg?branch=master)](https://travis-ci.org/mathiscode/reactify-boilerplate)
 
 ## Frontend: React
 
