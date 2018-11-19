@@ -12,7 +12,7 @@
     "client-dev": "npm start --prefix client",
     "build": "npm run build --prefix client",
     "dev": "npx concurrently \"npm run server-dev\" \"npm run client-dev\"",
-    "test": "npx mocha --exit"
+    "test": "npx mocha --exit && npm test --prefix client"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
