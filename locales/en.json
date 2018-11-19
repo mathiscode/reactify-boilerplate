@@ -1,0 +1,11 @@
+{
+  "Invalid Email Address": "Invalid Email Address",
+  "Authentication Failed": "Authentication Failed",
+  "Password must be at least 8 characters": "Password must be at least 8 characters",
+  "User already exists with that email address": "User already exists with that email address",
+  "User successfully registered": "User successfully registered",
+  "Current password incorrect": "Current password incorrect",
+  "Passwords did not match": "Passwords did not match",
+  "Password successfully updated": "Password successfully updated",
+  "Profile updated successfully": "Profile updated successfully"
+}

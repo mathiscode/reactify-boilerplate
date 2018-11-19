@@ -1,0 +1,51 @@
+{
+  "name": "reactify-boilerplate",
+  "version": "0.1.0",
+  "description": "Boilerplate utilizing Restify and React",
+  "main": "server.js",
+  "repository": "https://github.com/mathiscode/reactify-boilerplate.git",
+  "author": "J.R. Mathis",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "server-dev": "nodemon server.js",
+    "client-dev": "npm start --prefix client",
+    "build": "npm run build --prefix client",
+    "dev": "npx concurrently \"npm run server-dev\" \"npm run client-dev\"",
+    "test": "npx mocha"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^6.1.0",
+    "helmet": "^3.15.0",
+    "i18n": "^0.8.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.11",
+    "mongoose-timestamp": "^0.6.0",
+    "restify": "^7.2.2",
+    "restify-errors": "^6.1.1",
+    "restify-jwt-community": "^1.0.8",
+    "serve-static-restify": "^3.0.0",
+    "validator": "^10.9.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "concurrently": "^4.0.1",
+    "eslint": "5.6.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.6",
+    "supertest": "^3.3.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "log.json",
+      "client/*"
+    ]
+  }
+}

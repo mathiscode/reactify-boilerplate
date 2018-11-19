@@ -1,0 +1,40 @@
+html, body, #root, #root>div {
+  height: 100%
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+/* .nav-link span {
+  margin-left: 5px;
+} */
+
+.main-nav-dropdown .dropdown-item {
+  cursor: pointer;
+}
+
+.main-nav-dropdown a:hover {
+  text-decoration: none;
+}
+
+#content {
+  padding: 30px 30px 30px 30px;
+}
+
+.supercenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.left-sidebar {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
