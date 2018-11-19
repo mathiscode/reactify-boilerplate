@@ -8,8 +8,6 @@
 
 ## [Live Demo](https://reactify-boilerplate.herokuapp.com)
 
----
-
 ## Frontend: React
 
 Reactify Boilerplate uses [React](https://reactjs.org) (via [Create React App](https://github.com/facebook/create-react-app)) as a frontend framework.
