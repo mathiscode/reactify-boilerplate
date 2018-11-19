@@ -45,6 +45,15 @@ cd reactify-boilerplate
 yarn # or npm install if you prefer
 ```
 
+## Configuring
+```bash
+  cp .env.example .env
+```
+
+Edit `.env` for server configuration
+
+Edit `client/config/site.js` for client configuration
+
 ## Developing
 
 During development, run:
