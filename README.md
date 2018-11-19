@@ -47,7 +47,7 @@ yarn # or npm install if you prefer
 
 ## Configuring
 ```bash
-  cp .env.example .env
+cp .env.example .env
 ```
 
 Edit `.env` for server configuration
