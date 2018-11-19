@@ -1,4 +1,4 @@
-# reactify-boilerplate
+# Reactify Boilerplate
 
 ## Frontend: React
 
