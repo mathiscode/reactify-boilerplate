@@ -12,7 +12,8 @@
     "client-dev": "npm start --prefix client",
     "build": "npm run build --prefix client",
     "dev": "npx concurrently \"npm run server-dev\" \"npm run client-dev\"",
-    "test": "npx mocha --exit && npm test --prefix client"
+    "test": "npx mocha --exit && npm test --prefix client",
+    "postinstall": "cd client && yarn"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
