@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const rjwt = require('restify-jwt-community')
 const i18n = require('i18n')
 
-const log = require('./config/log')
+const log = require('./lib/log')
 
 const indexHTML = fs.readFileSync('./public/index.html').toString()
 
