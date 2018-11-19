@@ -6,7 +6,9 @@
 [![Hire Me](https://img.shields.io/badge/Hire%20Me-Please!-blue.svg)](https://www.linkedin.com/in/j-r-mathis-472342146/)
 [![Beerpay](https://beerpay.io/mathiscode/reactify-boilerplate/badge.svg?style=beer-square)](https://beerpay.io/mathiscode/reactify-boilerplate)  [![Beerpay](https://beerpay.io/mathiscode/reactify-boilerplate/make-wish.svg?style=flat-square)](https://beerpay.io/mathiscode/reactify-boilerplate?focus=wish)
 
-## [Live Demo](https://reactify-boilerplate.herokuapp.com)
+[Live Demo](https://reactify-boilerplate.herokuapp.com)
+
+---
 
 ## Frontend: React
 
