@@ -15,8 +15,6 @@ Includes:
 * [Animate.css](https://daneden.github.io/animate.css)
 * [Internationalization (via react-i18next)](https://react.i18next.com)
 
----
-
 ## Backend: Restify
 
 Reactify Boilerplate uses [Restify](http://restify.com) as a backend server.
@@ -58,4 +56,5 @@ yarn build
 This will bundle the React app and place it into the server's /public directory.
 
 ---
-## More docs coming soon!
+
+### More docs coming soon!
