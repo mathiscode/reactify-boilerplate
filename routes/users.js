@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const validator = require('validator')
 
-const log = require('../config/log')
+const log = require('../lib/log')
 const auth = require('../lib/auth')
 const User = require('../models/User')
 
