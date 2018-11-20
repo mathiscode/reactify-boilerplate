@@ -29,9 +29,18 @@ class Navigation extends Component {
     checkToken(this)
   }
 
-  logout = () => {
-    logout(this)
+  componentDidMount = () => {
+    // Close menu after link click when collapsed
+    Array.from(document.querySelectorAll('.nav-link')).forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (e.target.id !== 'language-dropdown') {
+          this.setState({ menuOpen: false })
+        }
+      })
+    })
   }
+
+  logout = () => logout(this)
 
   render () {
     const { t } = this.props
@@ -61,7 +70,7 @@ class Navigation extends Component {
 
             <Nav className='ml-auto' navbar>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle id='language-dropdown' nav caret>
                   <Icon icon='flag' className='mr-1' />
                   <span className='d-md-none'>Language</span>
                 </DropdownToggle>
