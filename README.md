@@ -1,4 +1,5 @@
 # Reactify Boilerplate
+
 [![GitHub license](https://img.shields.io/github/license/mathiscode/reactify-boilerplate.svg)](https://github.com/mathiscode/reactify-boilerplate/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/mathiscode/reactify-boilerplate.svg?branch=master)](https://travis-ci.org/mathiscode/reactify-boilerplate)
 [![GitHub issues](https://img.shields.io/github/issues/mathiscode/reactify-boilerplate.svg)](https://github.com/mathiscode/reactify-boilerplate/issues)
@@ -46,6 +47,7 @@ yarn # or npm install if you prefer
 ```
 
 ## Configuring
+
 ```bash
 cp .env.example .env
 ```
@@ -73,7 +75,3 @@ yarn build
 ```
 
 This will bundle the React app and place it into the server's /public directory.
-
----
-
-### More docs coming soon!
