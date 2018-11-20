@@ -74,7 +74,7 @@ class Login extends Component {
               </h3>
             </CardHeader>
             <CardBody>
-            <FormGroup>
+              <FormGroup>
                 <Label for='loginEmail'>{t('Email Address')}</Label>
                 <Input
                   id='loginEmail'
@@ -94,7 +94,7 @@ class Login extends Component {
                 />
               </FormGroup>
 
-              { 
+              {
                 this.state.loginError && (
                   <Alert color='danger'>
                     <Icon icon='exclamation-triangle' />

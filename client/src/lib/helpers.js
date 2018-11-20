@@ -1,3 +1,5 @@
+/* global localStorage */
+
 import axios from 'axios'
 
 export const logout = (self) => {

@@ -30,13 +30,12 @@ class Profile extends Component {
 
   render () {
     if (!this.props.user.loggedIn) return <Redirect to='/' />
-  
+
     return (
       <div style={{ padding: 50 }}>
         {
           this.state.loading ? <Loading className='supercenter' />
-          :
-          <pre>{JSON.stringify(this.state.profile, null, 2)}</pre>
+            : <pre>{JSON.stringify(this.state.profile, null, 2)}</pre>
         }
       </div>
     )

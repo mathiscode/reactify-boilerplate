@@ -1,4 +1,4 @@
-/* global describe, it, after */
+/* eslint-env mocha */
 
 const supertest = require('supertest')
 

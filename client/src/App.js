@@ -78,7 +78,7 @@ class App extends Component {
       <div>
         <Helmet>
           <title>{SiteTitle}</title>
-          { SiteTheme && <link href={`https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/${SiteTheme}/bootstrap.min.css`} rel="stylesheet" crossorigin="anonymous"></link> }
+          { SiteTheme && <link href={`https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/${SiteTheme}/bootstrap.min.css`} rel='stylesheet' crossorigin='anonymous' /> }
         </Helmet>
 
         <Router>
@@ -95,11 +95,10 @@ class App extends Component {
 
         <ToastContainer position={toast.POSITION.BOTTOM_RIGHT} />
       </div>
-    );
+    )
   }
 }
 
 const mapStateToProps = state => state
 
 export default connect(mapStateToProps, { setProfile })(App)
-

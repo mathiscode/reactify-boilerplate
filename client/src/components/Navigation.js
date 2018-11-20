@@ -38,7 +38,7 @@ class Navigation extends Component {
 
     return (
       <div>
-        <Navbar id='main-nav' color={NavbarColor || 'dark'} dark={NavbarDark || true} expand='md' fixed={NavbarFixed ? NavbarFixed : false}>
+        <Navbar id='main-nav' color={NavbarColor || 'dark'} dark={NavbarDark} expand='md' fixed={NavbarFixed || false}>
           <NavbarBrand href='#' className='animated infinite pulse'>{SiteTitle}</NavbarBrand>
           <NavbarToggler onClick={() => this.setState({ menuOpen: !this.state.menuOpen })} />
 
