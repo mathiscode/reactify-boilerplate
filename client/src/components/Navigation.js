@@ -62,7 +62,8 @@ class Navigation extends Component {
             <Nav className='ml-auto' navbar>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  <Icon icon='flag' />
+                  <Icon icon='flag' className='mr-1' />
+                  <span className='d-md-none'>Language</span>
                 </DropdownToggle>
                 <DropdownMenu className='main-nav-dropdown' right>
                   <NavLink href='/?lng=en'>
