@@ -43,11 +43,15 @@ Includes:
 
 ## Installing
 
+For best results, you should have [Yarn](https://yarnpkg.com/en/docs/install) installed.
+
 ```bash
 git clone --depth=1 https://github.com/mathiscode/reactify-boilerplate.git
 cd reactify-boilerplate
 yarn # or npm install if you prefer
 ```
+
+*If not using yarn, you will see an error that can be ignored, and you will need to `cd client && npm install` and replace `yarn` with `npm` in the following commands.*
 
 ## Configuring
 
