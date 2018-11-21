@@ -53,7 +53,7 @@ cd reactify-boilerplate
 yarn # or npm install if you prefer
 ```
 
-*If not using yarn, you will see an error that can be ignored, and you will need to `cd client && npm install` and replace `yarn` with `npm` in the following commands.*
+*If not using yarn, you will see an error that can be ignored, and you will need to `cd client && npm install` and replace `yarn` with `npm run` in the following commands.*
 
 ## Configuring
 
