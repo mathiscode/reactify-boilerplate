@@ -114,3 +114,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Contributors
 
 * [J.R. Mathis (mathiscode)](https://github.com/mathiscode)
+* See the full list of [contributors](https://github.com/mathiscode/reactify-boilerplate/graphs/contributors)
