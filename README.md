@@ -81,7 +81,7 @@ cp .env.example .env
 
 Edit `.env` for server configuration
 
-Edit `client/config/site.js` for client configuration
+Edit `client/src/config/site.js` for client configuration
 
 ## Developing
 
