@@ -1,4 +1,8 @@
 # ![Reactify Boilerplate](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/logo.png) <!-- omit in toc -->
+
+> “This is what I have learned, Malenfant. This is how it is, how it was, how it came to be.”
+
+*― Stephen Baxter, Manifold: Time*
   
 [![GitHub license](https://img.shields.io/github/license/mathiscode/reactify-boilerplate.svg)](https://github.com/mathiscode/reactify-boilerplate/blob/master/LICENSE.md)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
