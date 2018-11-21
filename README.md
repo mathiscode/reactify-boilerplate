@@ -1,5 +1,3 @@
-<!-- markdownlint-disable MD033 -->
-
 # Reactify Boilerplate
 
 [![GitHub license](https://img.shields.io/github/license/mathiscode/reactify-boilerplate.svg)](https://github.com/mathiscode/reactify-boilerplate/blob/master/LICENSE)
@@ -109,7 +107,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * **BTC**: [3722p31ydjezmzbcepCf29DQ8tvjoLUPVB](bitcoin:3722p31ydjezmzbcepCf29DQ8tvjoLUPVB)
   
-  <img alt="QR Code" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAADvklEQVR4nO2Wy44jMQwD8/8/vXsJfJpGWyIl23ERyKn1oOgaYD7/0NX6rDaA1goALhcAXC4AuFwAcLkeAfh8Pq2/t/3q97d693x3vzvf4WM2AADQ8tkt3+FjNgAA0PLZLd/hYzYAANDy2S3f4SMbgCr1QaoC6bpvl3wBoEgAYDL4VA8A2v5Rpw6oNvhUDwDa/lGXHaAGXj1fnbf6garzHXW7GgQAAAAAAAAAAGia/ybV7273j7qqg3cPAAC+dVUH7x4AAHzrqg7ePQAA+NZVHbz6gap/br/d+Y66XQ0CAAAAAAAAwLYAqFLnq4HsVu8WABxW7xYAHFbvFgAcVu+WHYDqX/SAX/vene/w8fgBAAAAAAAAAG4FYHft9gCn6ljnAODRsc4BwKNjnQOAR2X/BL4uPuwBq+9V78vuAwAA8BgAAO1e9b7sPgAAgB4D1fWrv7vv7QIUAAAgNxAAAAAAAMBnWD1Q9aPu775P3Tf6XIYAoPc+dd/ocxkCgN771H2jz2UIAHrvU/eNvunCoAH1AaqBc/vr7nfNBwAA8AwEgN5+13wAAIC5AdUP4AZMnef2p/pV6x/nzC4AAAAAAAAAgGsBqDasHtQN6G6AZO8HgMl+AAh+r5731g8AAAAACgCuBdkAqgOK+nXnU/3gABD87q4HANEwAAAAAKwEwB2Y+yAVyN3ujebhEgBscm80D5cAYJN7o3m4BACb3BvNw6X0P4HR+q6DuvyqD+z2n+0HgKRfAAjWA0Ct/2w/ACT9XgdAdIEamBsQ9wOr+1bPG3PTjQAg7Vs9b8xNNwKAtG/1vDE33QgA0r7V88bc2YWqodVAqACofqL3Rr9nBQAA4DG8uv71UAD425fL8Or610MB4G9f6cZiw+6A3fXVwET3Z+8DAADICQAAAABuAsD94FUHufa5/Vb/snkBAADkAswunA1Ina/uc/sFgGBA6nx1n9vv8QB0S31wdZ8acDWwKiBjT9hZkwAAAAAAAABgGQBuA1mDLrn3q/e5AcreAwAA4DkQAAAAAH4ZALfUA08DTu2v8g8ARQKAt8UAEOoHAADYCwA1cPdB7sDfvrvzqf493l0VCACsf3QAMPYDgHhgdH5UAPBjAHQ/SPV9UUCrgR512QEAAAAAAAAAAABNALgD3PVBZvtd9wEAAOQMA0BMAGCe/yYAKAZAVTcA3UBE/0BWAQYAk37c/gEAAAAAAA4CoPoX3e8KILtPzSvqv+p+AEjuU/OK+gcAAAAAAGgEAN0hALhcAHC5AOByAcDlAoDL9R9KCnz1Z6olUAAAAABJRU5ErkJggg==" />
+  ![QR Code](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/mathiscode-btc.png)
 
 * **OR**: Donate some time by submitting a pull request!
 
