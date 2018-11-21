@@ -14,6 +14,10 @@
 
 ---
 
+## Why Reactify Boilerplate
+
+Reinventing the wheel sucks. Reactify Boilerplate lets you get started with a solid foundation for new projects.
+
 ## Frontend: React
 
 Reactify Boilerplate uses [React](https://reactjs.org) (via [Create React App](https://github.com/facebook/create-react-app)) as a frontend framework.
