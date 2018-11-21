@@ -12,7 +12,7 @@
     "url": "https://github.com/mathiscode"
   },
   "scripts": {
-    "postinstall": "cd client && yarn",
+    "postinstall": "yarn --cwd client",
     "start": "node server.js",
     "server-dev": "nodemon server.js",
     "client-dev": "npm start --prefix client",
