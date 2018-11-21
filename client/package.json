@@ -1,7 +1,36 @@
 {
   "name": "reactify-boilerplate-client",
   "version": "0.1.2",
-  "private": true,
+  "homepage": "https://github.com/mathiscode/reactify-boilerplate#readme",
+  "repository": "https://github.com/mathiscode/reactify-boilerplate.git",
+  "bugs": "https://github.com/mathiscode/reactify-boilerplate/issues",
+  "license": "MIT",
+
+  "author": {
+    "name": "J.R. Mathis",
+    "url": "https://github.com/mathiscode"
+  },
+
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf ../public/* && react-scripts build && cp -r build/* ../public",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+
+  "proxy": "http://localhost:3001",
+
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
     "@fortawesome/free-brands-svg-icons": "^5.5.0",
@@ -23,21 +52,5 @@
     "react-toastify": "^4.4.3",
     "reactstrap": "^6.5.0",
     "redux": "^4.0.1"
-  },
-  "scripts": {
-    "start": "npx react-scripts start",
-    "build": "rm -rf ../public/* && npx react-scripts build && cp -r build/* ../public",
-    "test": "npx react-scripts test",
-    "eject": "npx react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "proxy": "http://localhost:3001"
+  }
 }

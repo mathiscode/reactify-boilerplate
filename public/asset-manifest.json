@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.8f5bf8b8.chunk.css",
-  "main.js": "/static/js/main.21f7473a.chunk.js",
-  "main.js.map": "/static/js/main.21f7473a.chunk.js.map",
-  "static/css/1.03dd7bce.chunk.css": "/static/css/1.03dd7bce.chunk.css",
-  "static/js/1.5e2abdea.chunk.js": "/static/js/1.5e2abdea.chunk.js",
-  "static/js/1.5e2abdea.chunk.js.map": "/static/js/1.5e2abdea.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/1.03dd7bce.chunk.css.map": "/static/css/1.03dd7bce.chunk.css.map",
-  "static/css/main.8f5bf8b8.chunk.css.map": "/static/css/main.8f5bf8b8.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.edde577f170b623a489beb314a99bdc8.js": "/precache-manifest.edde577f170b623a489beb314a99bdc8.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/mathiscode/reactify-boilerplate/static/css/main.2a8c617d.chunk.css",
+  "main.js": "/mathiscode/reactify-boilerplate/static/js/main.13604f98.chunk.js",
+  "main.js.map": "/mathiscode/reactify-boilerplate/static/js/main.13604f98.chunk.js.map",
+  "static/css/1.03dd7bce.chunk.css": "/mathiscode/reactify-boilerplate/static/css/1.03dd7bce.chunk.css",
+  "static/js/1.eab37065.chunk.js": "/mathiscode/reactify-boilerplate/static/js/1.eab37065.chunk.js",
+  "static/js/1.eab37065.chunk.js.map": "/mathiscode/reactify-boilerplate/static/js/1.eab37065.chunk.js.map",
+  "runtime~main.js": "/mathiscode/reactify-boilerplate/static/js/runtime~main.e93164dd.js",
+  "runtime~main.js.map": "/mathiscode/reactify-boilerplate/static/js/runtime~main.e93164dd.js.map",
+  "static/css/1.03dd7bce.chunk.css.map": "/mathiscode/reactify-boilerplate/static/css/1.03dd7bce.chunk.css.map",
+  "static/css/main.2a8c617d.chunk.css.map": "/mathiscode/reactify-boilerplate/static/css/main.2a8c617d.chunk.css.map",
+  "index.html": "/mathiscode/reactify-boilerplate/index.html",
+  "precache-manifest.e086d1de3ea4ec1fc90c2034fc29899c.js": "/mathiscode/reactify-boilerplate/precache-manifest.e086d1de3ea4ec1fc90c2034fc29899c.js",
+  "service-worker.js": "/mathiscode/reactify-boilerplate/service-worker.js"
 }
