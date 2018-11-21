@@ -12,11 +12,26 @@
 
 ---
 
+- [Reactify Boilerplate](#reactify-boilerplate)
+  - [Why Reactify Boilerplate](#why-reactify-boilerplate)
+    - [Frontend: React](#frontend-react)
+    - [Backend: Restify](#backend-restify)
+  - [Installing](#installing)
+  - [Configuring](#configuring)
+  - [Developing](#developing)
+  - [Testing](#testing)
+  - [Building](#building)
+  - [License](#license)
+  - [Donate](#donate)
+  - [Contributors](#contributors)
+
+---
+
 ## Why Reactify Boilerplate
 
 Reinventing the wheel sucks. Reactify Boilerplate lets you get started with a solid foundation for new projects.
 
-## Frontend: React
+### Frontend: React
 
 Reactify Boilerplate uses [React](https://reactjs.org) (via [Create React App](https://github.com/facebook/create-react-app)) as a frontend framework.
 
@@ -31,7 +46,7 @@ Includes:
 * [Animate.css](https://daneden.github.io/animate.css)
 * [Internationalization (via react-i18next)](https://react.i18next.com)
 
-## Backend: Restify
+### Backend: Restify
 
 Reactify Boilerplate uses [Restify](http://restify.com) as a backend server.
 
