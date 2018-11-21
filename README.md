@@ -10,6 +10,8 @@
 
 [Live Demo](https://reactify-boilerplate.herokuapp.com)
 
+**Note**: The demo runs on a free dyno, so it may take a moment to load after waking up.
+
 ---
 
 ## Frontend: React

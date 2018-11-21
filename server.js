@@ -19,7 +19,7 @@ i18n.configure({
 
 // Setup server
 const server = restify.createServer({
-  name: 'Unknown',
+  name: process.env.SERVER_NAME || 'Unknown',
   ignoreTrailingSlash: true
 })
 
@@ -43,6 +43,7 @@ server
 
 // Setup routes
 require('./routes/users')(server)
+// require('./routes/myroute')(server)
 
 // Serve our React app
 server.get('/*', restify.plugins.serveStatic({

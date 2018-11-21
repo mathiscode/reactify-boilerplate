@@ -18,9 +18,9 @@ class Home extends Component {
           <CardBody>
             <h4>Frontend: React</h4>
             <p>
-                Reactify Boilerplate uses <a href='https://reactjs.org' target='_blank'>React</a>
+              Reactify Boilerplate uses <a href='https://reactjs.org' target='_blank'>React</a>
               {' '}
-                (via <a href='https://github.com/facebook/create-react-app' target='_blank'>Create React App</a>) as a frontend framework.
+              (via <a href='https://github.com/facebook/create-react-app' target='_blank'>Create React App</a>) as a frontend framework.
             </p>
             <p>Includes:</p>
             <ul>
