@@ -7,12 +7,10 @@
   "repository": "https://github.com/mathiscode/reactify-boilerplate.git",
   "bugs": "https://github.com/mathiscode/reactify-boilerplate/issues",
   "license": "MIT",
-
   "author": {
     "name": "J.R. Mathis",
     "url": "https://github.com/mathiscode"
   },
-
   "scripts": {
     "start": "node server.js",
     "server-dev": "nodemon server.js",
@@ -27,14 +25,12 @@
     "sync-demo": "git checkout demo && git merge master && git push && git checkout master",
     "postinstall": "cd client && yarn"
   },
-
   "nodemonConfig": {
     "ignore": [
       "*.log",
       "client/*"
     ]
   },
-  
   "standard": {
     "parser": "babel-eslint",
     "ignore": [
@@ -42,7 +38,6 @@
       "/public"
     ]
   },
-
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^6.1.0",
@@ -58,7 +53,6 @@
     "validator": "^10.9.0",
     "winston": "^3.1.0"
   },
-
   "devDependencies": {
     "babel-eslint": "9.0.0",
     "chai": "^4.2.0",
