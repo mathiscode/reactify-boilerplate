@@ -96,3 +96,19 @@ yarn build
 ```
 
 This will bundle the React app and place it into the server's /public directory.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Donate
+
+* [**Beerpay.io**](https://beerpay.io/mathiscode/reactify-boilerplate): https://beerpay.io/mathiscode/reactify-boilerplate
+
+* **BTC**: 3722p31ydjezmzbcepCf29DQ8tvjoLUPVB
+
+* **OR**: Donate some time by submitting a pull request!
+
+## Contributors
+
+* [J.R. Mathis (mathiscode)](https://github.com/mathiscode)
