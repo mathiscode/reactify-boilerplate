@@ -1,4 +1,4 @@
-# ![React Boilerplate](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/logo.png)
+# ![Reactify Boilerplate](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/logo.png) <!-- omit in toc -->
 
 [![GitHub license](https://img.shields.io/github/license/mathiscode/reactify-boilerplate.svg)](https://github.com/mathiscode/reactify-boilerplate/blob/master/LICENSE)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -12,18 +12,17 @@
 
 ---
 
-- [!React Boilerplate](#react-boilerplate)
-  - [Why Reactify Boilerplate](#why-reactify-boilerplate)
-    - [Frontend: React](#frontend-react)
-    - [Backend: Restify](#backend-restify)
-  - [Installing](#installing)
-  - [Configuring](#configuring)
-  - [Developing](#developing)
-  - [Testing](#testing)
-  - [Building](#building)
-  - [License](#license)
-  - [Donate](#donate)
-  - [Contributors](#contributors)
+- [Why Reactify Boilerplate](#why-reactify-boilerplate)
+  - [Frontend: React](#frontend-react)
+  - [Backend: Restify](#backend-restify)
+- [Installing](#installing)
+- [Configuring](#configuring)
+- [Developing](#developing)
+- [Testing](#testing)
+- [Building](#building)
+- [License](#license)
+- [Donate](#donate)
+- [Contributors](#contributors)
 
 ---
 
