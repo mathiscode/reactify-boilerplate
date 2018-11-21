@@ -105,7 +105,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * [**Beerpay.io**](https://beerpay.io/mathiscode/reactify-boilerplate): https://beerpay.io/mathiscode/reactify-boilerplate
 
-* **BTC**: [3722p31ydjezmzbcepCf29DQ8tvjoLUPVB](bitcoin:3722p31ydjezmzbcepCf29DQ8tvjoLUPVB)
+* **BTC**: 3722p31ydjezmzbcepCf29DQ8tvjoLUPVB
   
   ![QR Code](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/mathiscode-btc.png)
 
