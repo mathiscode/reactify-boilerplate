@@ -12,6 +12,7 @@
     "url": "https://github.com/mathiscode"
   },
   "scripts": {
+    "postinstall": "cd client && yarn",
     "start": "node server.js",
     "server-dev": "nodemon server.js",
     "client-dev": "npm start --prefix client",
@@ -23,7 +24,9 @@
     "test": "npm run lint && npm run test-server && npm run test-client",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --exit test/ -x *.test.js",
     "sync-demo": "git checkout demo && git merge master && git push && git checkout master",
-    "postinstall": "cd client && yarn"
+    "release-patch": "yarn version --patch && yarn version --cwd client --patch && git push --follow-tags",
+    "release-minor": "yarn version --minor && yarn version --cwd client --minor && git push --follow-tags",
+    "release-major": "yarn version --major && yarn version --cwd client --major && git push --follow-tags"
   },
   "nodemonConfig": {
     "ignore": [
