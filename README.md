@@ -61,13 +61,23 @@ Edit `client/config/site.js` for client configuration
 
 ## Developing
 
-During development, run:
-
 ```bash
 yarn run dev
 ```
 
 This will launch both the Restify server and the React development server.
+
+## Testing
+
+```bash
+# Complete:
+yarn test
+
+# Individually:
+yarn run lint
+yarn run test-server
+yarn run test-client
+```
 
 ## Building
 
