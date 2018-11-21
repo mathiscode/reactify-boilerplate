@@ -45,6 +45,8 @@ Includes:
 
 For best results, you should have [Yarn](https://yarnpkg.com/en/docs/install) installed.
 
+If you're using Windows, you will need to use [Git Bash](https://git-scm.com/download/win) for commands to be successful.
+
 ```bash
 git clone --depth=1 https://github.com/mathiscode/reactify-boilerplate.git
 cd reactify-boilerplate
@@ -66,7 +68,7 @@ Edit `client/config/site.js` for client configuration
 ## Developing
 
 ```bash
-yarn run dev
+yarn dev
 ```
 
 This will launch both the Restify server and the React development server.
@@ -78,9 +80,9 @@ This will launch both the Restify server and the React development server.
 yarn test
 
 # Individually:
-yarn run lint
-yarn run test-server
-yarn run test-client
+yarn lint
+yarn test-server
+yarn test-client
 ```
 
 ## Building
