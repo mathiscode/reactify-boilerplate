@@ -24,6 +24,7 @@
     "test-client": "npm test --prefix client",
     "test": "npm run lint && npm run test-server && npm run test-client",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --exit test/ -x *.test.js",
+    "sync-demo": "git checkout demo && git merge master && git push && git checkout master",
     "postinstall": "cd client && yarn"
   },
 
