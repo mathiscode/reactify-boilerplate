@@ -30,6 +30,7 @@
 - [Building](#building)
 - [Logging](#logging)
   - [Log to file](#log-to-file)
+  - [Log to Logz.io](#log-to-logzio)
   - [Log to Loggly](#log-to-loggly)
 - [License](#license)
 - [Donate](#donate)
@@ -135,7 +136,16 @@ LOG_FILE=filename.log
 ERROR_LOG_FILE=errors.log
 ```
 
-### Log to Loggly
+### Log to [Logz.io](https://logz.io)
+
+In `.env` or your environment variables, set:
+
+```INI
+USE_LOGZIO=true
+LOGZIO_API_TOKEN=yourlogziotoken
+```
+
+### Log to [Loggly](https://loggly.com)
 
 In `.env` or your environment variables, set:
 

@@ -2691,7 +2691,7 @@ json-stable-stringify-without-jsonify@^1.0.1:
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
 
-json-stringify-safe@5.0.x, json-stringify-safe@~5.0.1:
+json-stringify-safe@5.0.1, json-stringify-safe@5.0.x, json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
@@ -2839,6 +2839,11 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
+lodash.assign@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
+  integrity sha1-DZnzzNem0mHRm9rrkkUAXShYCOc=
+
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
@@ -2899,6 +2904,16 @@ logform@^1.9.1:
     fecha "^2.3.3"
     ms "^2.1.1"
     triple-beam "^1.2.0"
+
+logzio-nodejs@^0.4.15:
+  version "0.4.16"
+  resolved "https://registry.yarnpkg.com/logzio-nodejs/-/logzio-nodejs-0.4.16.tgz#f23336dd53284f1fdac00a8acd1f829c754dad22"
+  integrity sha512-3YlTYqsaenqvMdtFTbbcPVTucPNNDpXvEBURA9/+gZ8YlQ5t9P3wtkv5LMSdr8rNjEdQ4xq/NLVXp97DY2orwg==
+  dependencies:
+    json-stringify-safe "5.0.1"
+    lodash.assign "4.2.0"
+    moment "^2.22.1"
+    request "^2.87.0"
 
 loose-envify@^1.0.0, loose-envify@^1.3.1:
   version "1.4.0"
@@ -3110,7 +3125,7 @@ mocha@^5.2.0:
     mkdirp "0.5.1"
     supports-color "5.4.0"
 
-moment@^2.10.6, moment@^2.18.1:
+moment@^2.10.6, moment@^2.18.1, moment@^2.22.1:
   version "2.22.2"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
   integrity sha1-PCV/mDn8DpP/UxSWMiOeuQeD/2Y=
@@ -3895,7 +3910,7 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-"request@>=2.76.0 <3.0.0":
+"request@>=2.76.0 <3.0.0", request@^2.87.0:
   version "2.88.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
   integrity sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg==
@@ -4927,6 +4942,17 @@ widest-line@^2.0.0:
     clone "^2.1.1"
     node-loggly-bulk "^2.0.1"
     winston "^3.0"
+    winston-transport "^4.2.0"
+
+winston-logzio@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/winston-logzio/-/winston-logzio-3.0.2.tgz#ea192e083d59d54e35e4c3007b0ba41da09be179"
+  integrity sha512-0eIBUEjvcdHlgNqpEZKaepP0SP0pekEpY5ssH9IC/rEmUDrnR//dezPHWdPNcq0fNby+zTphjbEeBe/3qqVulg==
+  dependencies:
+    json-stringify-safe "5.0.1"
+    lodash.assign "4.2.0"
+    logzio-nodejs "^0.4.15"
+    winston "^3.1.0"
     winston-transport "^4.2.0"
 
 winston-transport@^4.2.0:
