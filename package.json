@@ -24,9 +24,9 @@
     "test": "npm run lint && npm run test-server && npm run test-client",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --exit test/ -x *.test.js",
     "sync-demo": "git checkout demo && git merge master && git push && git checkout master",
-    "release-patch": "yarn version --patch --no-git-tag-version --no-commit-hooks && yarn version --cwd client --patch && git push --follow-tags",
-    "release-minor": "yarn version --minor --no-git-tag-version --no-commit-hooks && yarn version --cwd client --minor && git push --follow-tags",
-    "release-major": "yarn version --major --no-git-tag-version --no-commit-hooks && yarn version --cwd client --major && git push --follow-tags"
+    "release-patch": "yarn version --cwd client --patch --no-git-tag-version --no-commit-hooks && yarn version --patch && git push --follow-tags",
+    "release-minor": "yarn version --cwd client --minor --no-git-tag-version --no-commit-hooks && yarn version --minor && git push --follow-tags",
+    "release-major": "yarn version --cwd client --major --no-git-tag-version --no-commit-hooks && yarn version --major && git push --follow-tags"
   },
   "cacheDirectories": [
     "node_modules",
