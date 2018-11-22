@@ -25,7 +25,8 @@
   - [Backend: Restify](#backend-restify)
 - [Installing](#installing)
 - [Configuring](#configuring)
-- [Developing](#developing)
+- [Customizing](#customizing)
+  - [Running the development environment](#running-the-development-environment)
 - [Testing](#testing)
 - [Building](#building)
 - [Logging](#logging)
@@ -93,13 +94,19 @@ Edit `.env` for server configuration
 
 Edit `client/src/config/site.js` for client configuration
 
-## Developing
+## Customizing
+
+Edit/add client components in `client/src/components`
+
+Edit/add server routes in `server.js` (*look for the comment* `// Setup routes`)
+
+`routes/users/index.js` has examples of how to include routes
+
+### Running the development environment
 
 ```bash
-yarn dev
+yarn dev # This will launch both the Restify server and the React development server.
 ```
-
-This will launch both the Restify server and the React development server.
 
 ## Testing
 
