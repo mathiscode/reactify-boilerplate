@@ -3,6 +3,8 @@ import { Link, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { withNamespaces } from 'react-i18next'
+import CountryFlag from 'react-country-flag'
+import i18n from 'i18next'
 
 import { SiteTitle, NavbarColor, NavbarDark, NavbarFixed } from '../config/site'
 import { setToken, setLoggedIn, setLoggedOut, setProfile } from '../redux/actions'
@@ -27,6 +29,7 @@ class Navigation extends Component {
 
   componentWillMount = () => {
     checkToken(this)
+    this.setState({ language: i18n.language })
   }
 
   componentDidMount = () => {
@@ -76,14 +79,16 @@ class Navigation extends Component {
                 </DropdownToggle>
                 <DropdownMenu className='main-nav-dropdown' right>
                   <NavLink href='/?lng=en'>
-                    <DropdownItem>
-                      {t('English')}
+                    <DropdownItem className={this.state.language === 'en' ? 'active' : ''}>
+                      <CountryFlag code='us' svg />
+                      <span className='ml-2'>{t('English')}</span>
                     </DropdownItem>
                   </NavLink>
 
                   <NavLink href='/?lng=de'>
-                    <DropdownItem>
-                      {t('Deutsch')}
+                    <DropdownItem className={this.state.language === 'de' ? 'active' : ''}>
+                      <CountryFlag code='de' svg />
+                      <span className='ml-2'>{t('Deutsch')}</span>
                     </DropdownItem>
                   </NavLink>
                 </DropdownMenu>
