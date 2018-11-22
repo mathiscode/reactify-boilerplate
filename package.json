@@ -28,7 +28,10 @@
     "release-minor": "yarn version --minor --no-git-tag-version --no-commit-hooks && yarn version --cwd client --minor && git push --follow-tags",
     "release-major": "yarn version --major --no-git-tag-version --no-commit-hooks && yarn version --cwd client --major && git push --follow-tags"
   },
-  "cacheDirectories": ["node_modules", "client/node_modules"],
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
   "engines": {
     "node": "^10.13.0",
     "npm": "^6.4.1",
@@ -59,7 +62,8 @@
     "restify-errors": "^6.1.1",
     "restify-jwt-community": "^1.0.8",
     "validator": "^10.9.0",
-    "winston": "^3.1.0"
+    "winston": "^3.1.0",
+    "winston-loggly-bulk": "https://github.com/loggly/winston-loggly-bulk.git#3.x"
   },
   "devDependencies": {
     "babel-eslint": "9.0.0",

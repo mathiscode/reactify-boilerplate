@@ -28,6 +28,9 @@
 - [Developing](#developing)
 - [Testing](#testing)
 - [Building](#building)
+- [Logging](#logging)
+  - [Log to file](#log-to-file)
+  - [Log to Loggly](#log-to-loggly)
 - [License](#license)
 - [Donate](#donate)
 - [Contributors](#contributors)
@@ -44,11 +47,11 @@ Reactify Boilerplate uses [React](https://reactjs.org) (via [Create React App](h
 
 Includes:
 
+- [Bootstrap 4](https://getbootstrap.com) (via [reactstrap](https://reactstrap.github.io/))
+- [Bootswatch Themes](https://bootswatch.com)
 - [React Router](https://reacttraining.com/react-router)
 - [Redux](https://redux.js.org/)
 - [React-Toastify](https://github.com/fkhadra/react-toastify)
-- [Bootstrap 4](https://getbootstrap.com) (via [reactstrap](https://reactstrap.github.io/))
-- [Bootswatch Themes](https://bootswatch.com)
 - [FontAwesome](https://fontawesome.com)
 - [Animate.css](https://daneden.github.io/animate.css)
 - [Internationalization (via react-i18next)](https://react.i18next.com)
@@ -118,6 +121,31 @@ yarn build
 ```
 
 This will bundle the React app and place it into the server's /public directory.
+
+## Logging
+
+Logs will output to the console if NODE_ENV is not `production`
+
+### Log to file
+
+In `.env` or your environment variables, set:
+
+```INI
+LOG_FILE=filename.log
+```
+
+### Log to Loggly
+
+In `.env` or your environment variables, set:
+
+```INI
+USE_LOGGLY=true
+LOGGLY_SUBDOMAIN=yourlogglysubdomain
+LOGGLY_TOKEN=yourlogglytoken
+LOGGLY_TAGS=mytag-1,mytag-2
+```
+
+*Note: you may get [a warning](https://github.com/loggly/winston-loggly-bulk/issues/45) about the loggly module; this can be safely ignored.*
 
 ## License
 
