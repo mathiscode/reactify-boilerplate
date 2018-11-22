@@ -78,14 +78,14 @@ class Navigation extends Component {
                   <span className='d-md-none'>Language</span>
                 </DropdownToggle>
                 <DropdownMenu className='main-nav-dropdown' right>
-                  <NavLink href='/?lng=en'>
+                  <NavLink href='?lng=en'>
                     <DropdownItem className={this.state.language === 'en' ? 'active' : ''}>
                       <CountryFlag code='us' svg />
                       <span className='ml-2'>{t('English')}</span>
                     </DropdownItem>
                   </NavLink>
 
-                  <NavLink href='/?lng=de'>
+                  <NavLink href='?lng=de'>
                     <DropdownItem className={this.state.language === 'de' ? 'active' : ''}>
                       <CountryFlag code='de' svg />
                       <span className='ml-2'>{t('Deutsch')}</span>
