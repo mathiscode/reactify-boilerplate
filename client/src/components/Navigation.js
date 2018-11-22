@@ -43,6 +43,13 @@ class Navigation extends Component {
     })
   }
 
+  changeLanguage = (lang) => {
+    i18n.changeLanguage(lang, (err) => {
+      if (err) return console.error(err)
+      this.setState({ language: lang })
+    })
+  }
+
   logout = () => logout(this)
 
   render () {
@@ -78,14 +85,14 @@ class Navigation extends Component {
                   <span className='d-md-none'>Language</span>
                 </DropdownToggle>
                 <DropdownMenu className='main-nav-dropdown' right>
-                  <NavLink href='?lng=en'>
+                  <NavLink onClick={() => this.changeLanguage('en')}>
                     <DropdownItem className={this.state.language === 'en' ? 'active' : ''}>
                       <CountryFlag code='us' svg />
                       <span className='ml-2'>{t('English')}</span>
                     </DropdownItem>
                   </NavLink>
 
-                  <NavLink href='?lng=de'>
+                  <NavLink onClick={() => this.changeLanguage('de')}>
                     <DropdownItem className={this.state.language === 'de' ? 'active' : ''}>
                       <CountryFlag code='de' svg />
                       <span className='ml-2'>{t('Deutsch')}</span>
