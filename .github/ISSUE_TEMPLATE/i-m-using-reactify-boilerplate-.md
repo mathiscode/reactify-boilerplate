@@ -1,6 +1,7 @@
 ---
 name: I'm using Reactify Boilerplate!
 about: Are you using Reactify Boilerplate? Let us know and get listed!
+labels: info
 
 ---
 
