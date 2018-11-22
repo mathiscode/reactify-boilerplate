@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD034 MD036 -->
+
 # ![Reactify Boilerplate](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/logo.png) <!-- omit in toc -->
 
 > “This is what I have learned, Malenfant. This is how it is, how it was, how it came to be.”
@@ -42,14 +44,14 @@ Reactify Boilerplate uses [React](https://reactjs.org) (via [Create React App](h
 
 Includes:
 
-* [React Router](https://reacttraining.com/react-router)
-* [Redux](https://redux.js.org/)
-* [React-Toastify](https://github.com/fkhadra/react-toastify)
-* [Bootstrap 4](https://getbootstrap.com) (via [reactstrap](https://reactstrap.github.io/))
-* [Bootswatch Themes](https://bootswatch.com)
-* [FontAwesome](https://fontawesome.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Internationalization (via react-i18next)](https://react.i18next.com)
+- [React Router](https://reacttraining.com/react-router)
+- [Redux](https://redux.js.org/)
+- [React-Toastify](https://github.com/fkhadra/react-toastify)
+- [Bootstrap 4](https://getbootstrap.com) (via [reactstrap](https://reactstrap.github.io/))
+- [Bootswatch Themes](https://bootswatch.com)
+- [FontAwesome](https://fontawesome.com)
+- [Animate.css](https://daneden.github.io/animate.css)
+- [Internationalization (via react-i18next)](https://react.i18next.com)
 
 ### Backend: Restify
 
@@ -57,9 +59,9 @@ Reactify Boilerplate uses [Restify](http://restify.com) as a backend server.
 
 Includes:
 
-* [Mongoose](https://mongoosejs.com)
-* [Internationalization (via i18n)](https://github.com/mashpie/i18n-node)
-* User login/signup is already implemented for you
+- [Mongoose](https://mongoosejs.com)
+- [Internationalization (via i18n)](https://github.com/mashpie/i18n-node)
+- User login/signup is already implemented for you
 
 ---
 
@@ -123,15 +125,15 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Donate
 
-* [**Beerpay.io**](https://beerpay.io/mathiscode/reactify-boilerplate): https://beerpay.io/mathiscode/reactify-boilerplate
+- [**Beerpay.io**](https://beerpay.io/mathiscode/reactify-boilerplate): https://beerpay.io/mathiscode/reactify-boilerplate
 
-* **BTC**: 3722p31ydjezmzbcepCf29DQ8tvjoLUPVB
+- **BTC**: 3722p31ydjezmzbcepCf29DQ8tvjoLUPVB
   
   ![QR Code](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/mathiscode-btc.png)
 
-* **OR**: Donate some time by submitting a pull request!
+- **OR**: Donate some time by submitting a pull request!
 
 ## Contributors
 
-* [J.R. Mathis (mathiscode)](https://github.com/mathiscode)
-* See the full list of [contributors](https://github.com/mathiscode/reactify-boilerplate/graphs/contributors)
+- [J.R. Mathis (mathiscode)](https://github.com/mathiscode)
+- See the full list of [contributors](https://github.com/mathiscode/reactify-boilerplate/graphs/contributors)
