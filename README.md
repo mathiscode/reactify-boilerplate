@@ -132,6 +132,7 @@ In `.env` or your environment variables, set:
 
 ```INI
 LOG_FILE=filename.log
+ERROR_LOG_FILE=errors.log
 ```
 
 ### Log to Loggly
