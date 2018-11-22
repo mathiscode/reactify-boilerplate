@@ -5,6 +5,7 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { withNamespaces } from 'react-i18next'
 import CountryFlag from 'react-country-flag'
 import i18n from 'i18next'
+import axios from 'axios'
 
 import { SiteTitle, NavbarColor, NavbarDark, NavbarFixed } from '../config/site'
 import { setToken, setLoggedIn, setLoggedOut, setProfile } from '../redux/actions'
@@ -46,7 +47,10 @@ class Navigation extends Component {
   changeLanguage = (lang) => {
     i18n.changeLanguage(lang, (err) => {
       if (err) return console.error(err)
+
       this.setState({ language: lang })
+      axios.defaults.headers.common['Accept-Language'] = i18n.language || 'en'
+      axios.defaults.params = { lng: i18n.language || 'en' }
     })
   }
 
