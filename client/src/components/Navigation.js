@@ -36,10 +36,10 @@ class Navigation extends Component {
   componentDidMount = () => {
     // returns true if the element or one of its parents has the class classname
     const anyParentHasClass = (element, classname) => {
-      if (!element.parentNode) return false;
-      if (element.className && element.className.split instanceof Function && element.className.split(' ').indexOf(classname)>=0) return true;
-      return anyParentHasClass(element.parentNode, classname);
-  }
+      if (!element.parentNode) return false
+      if (element.className && element.className.split instanceof Function && element.className.split(' ').indexOf(classname) >= 0) return true
+      return anyParentHasClass(element.parentNode, classname)
+    }
 
     // Close menu after link click when collapsed
     Array.from(document.querySelectorAll('.nav-link')).forEach(link => {
