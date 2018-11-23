@@ -13,31 +13,9 @@ export const NavbarFixed = 'top' // Where to fix navbar, or false for normal
 export const ParticlesEnabled = true
 export const ParticlesConfig = {
   particles: {
-    number: {
-      value: 50,
-      density: {
-        enable: false,
-        value_area: 800
-      }
-    },
-    color: {
-      value: '#333333'
-    },
-    shape: {
-      type: 'circle',
-      stroke: {
-        width: 0,
-        color: '#000000'
-      },
-      polygon: {
-        nb_sides: 5
-      },
-      image: {
-        src: 'img/github.svg',
-        width: 100,
-        height: 100
-      }
-    },
+    number: { value: 50 },
+    color: { value: '#333' },
+    shape: { type: 'circle' },
     opacity: {
       value: 0.5,
       random: true,
@@ -49,11 +27,11 @@ export const ParticlesConfig = {
       }
     },
     size: {
-      value: 3.9458004845442964,
+      value: 5,
       random: true,
       anim: {
         enable: true,
-        speed: 40,
+        speed: 20,
         size_min: 0.1,
         sync: false
       }
@@ -61,25 +39,12 @@ export const ParticlesConfig = {
     line_linked: {
       enable: true,
       distance: 150,
-      color: '#222222',
+      color: '#222',
       opacity: 0.4,
       width: 1
-    },
-    move: {
-      enable: true,
-      speed: 6,
-      direction: 'none',
-      random: false,
-      straight: false,
-      out_mode: 'out',
-      bounce: false,
-      attract: {
-        enable: false,
-        rotateX: 600,
-        rotateY: 1200
-      }
     }
   },
+
   interactivity: {
     detect_on: 'canvas',
     events: {
@@ -119,5 +84,6 @@ export const ParticlesConfig = {
       }
     }
   },
+
   retina_detect: true
 }
