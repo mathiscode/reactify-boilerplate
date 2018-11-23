@@ -4,7 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
-import '../i18n'
+import '../lib/i18n'
 import App from '../App'
 import Store from '../redux/store'
 
