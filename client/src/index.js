@@ -2,8 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
-import './index.css'
-import './i18n'
+import './styles/index.scss'
+import './lib/i18n'
+
 import App from './App'
 import Store from './redux/store'
 import * as serviceWorker from './serviceWorker'
@@ -17,12 +18,15 @@ To hardcode a theme and improve performance:
   set SiteTheme to false in config/site.js
   then use import 'bootswatch/dist/[theme]/bootstrap.min.css' below
 */
+
 import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootswatch/dist/[theme]/bootstrap.min.css'
 
 ReactDOM.render(
   <Provider store={Store}>
     <App />
   </Provider>,
+
   document.getElementById('root')
 )
 

@@ -5,7 +5,7 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import { reactI18nextModule } from 'react-i18next'
 
 // Import locales
-import locale_DE from './locales/de'
+import locale_DE from '../locales/de'
 
 // Setup internationalization
 i18n
