@@ -23,7 +23,7 @@ Please update the tests to reflect your code changes. Pull requests will not be 
 
 ## Documentation
 
-Please update the docs accordingly so that there are no discrepencies between the API and the documentation.
+If necessary, update the documentation to reflect your changes.
 
 ## Developing
 
