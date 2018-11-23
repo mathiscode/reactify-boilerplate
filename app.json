@@ -1,0 +1,35 @@
+{
+  "name": "reactify-boilerplate",
+  "scripts": {},
+  "env": {
+    "JWT_EXPIRES": {
+      "required": true
+    },
+    "JWT_SECRET": {
+      "required": true
+    },
+    "LOGZIO_API_TOKEN": {
+      "required": true
+    },
+    "MONGO_URI": {
+      "required": true
+    },
+    "USE_LOGZIO": {
+      "required": true
+    },
+    "YARN_PRODUCTION": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
