@@ -34,10 +34,17 @@ class Navigation extends Component {
   }
 
   componentDidMount = () => {
+    // returns true if the element or one of its parents has the class classname
+    const anyParentHasClass = (element, classname) => {
+      if (!element.parentNode) return false;
+      if (element.className && element.className.split instanceof Function && element.className.split(' ').indexOf(classname)>=0) return true;
+      return anyParentHasClass(element.parentNode, classname);
+  }
+
     // Close menu after link click when collapsed
     Array.from(document.querySelectorAll('.nav-link')).forEach(link => {
       link.addEventListener('click', (e) => {
-        if (e.target.id !== 'language-dropdown') {
+        if (!anyParentHasClass(e.target, 'language-dropdown')) {
           this.setState({ menuOpen: false })
         }
       })
@@ -84,9 +91,9 @@ class Navigation extends Component {
 
             <Nav className='ml-auto' navbar>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle id='language-dropdown' nav caret>
-                  <Icon icon='flag' className='mr-1' />
-                  <span className='d-md-none'>Language</span>
+                <DropdownToggle className='language-dropdown' nav caret>
+                  <Icon icon='flag' className='language-dropdown mr-1' />
+                  <span className='language-dropdown d-md-none'>Language</span>
                 </DropdownToggle>
                 <DropdownMenu className='main-nav-dropdown' right>
                   <NavLink onClick={() => this.changeLanguage('en')}>
