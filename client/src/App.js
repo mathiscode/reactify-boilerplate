@@ -9,6 +9,7 @@ import axios from 'axios'
 
 import 'react-toastify/dist/ReactToastify.css'
 import 'animate.css/animate.css'
+import 'particles.js'
 
 import { setProfile } from './redux/actions'
 import { SiteTitle, SiteTheme, NavbarFixed } from './config/site'
@@ -93,7 +94,7 @@ class App extends Component {
           </React.Fragment>
         </Router>
 
-        <ToastContainer position={toast.POSITION.BOTTOM_RIGHT} />
+        <ToastContainer className='Toastify__toast-container' position={toast.POSITION.BOTTOM_RIGHT} />
       </div>
     )
   }

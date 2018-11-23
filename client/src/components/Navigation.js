@@ -60,7 +60,7 @@ class Navigation extends Component {
     const { t } = this.props
 
     return (
-      <div>
+      <React.Fragment>
         <Navbar id='main-nav' color={NavbarColor || 'dark'} dark={NavbarDark} expand='md' fixed={NavbarFixed || false}>
           <NavbarBrand href='#' className='animated infinite pulse'>{SiteTitle}</NavbarBrand>
           <NavbarToggler onClick={() => this.setState({ menuOpen: !this.state.menuOpen })} />
@@ -153,7 +153,7 @@ class Navigation extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
+      </React.Fragment>
     )
   }
 }
