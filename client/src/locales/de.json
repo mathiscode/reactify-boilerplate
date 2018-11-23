@@ -9,5 +9,12 @@
   "Home": "Zuhause",
   "My Profile": "Mein Profil",
   "There was an error getting your profile": "Beim Abrufen Ihres Profils ist ein Fehler aufgetreten",
-  "Welcome back!": "Willkommen zurück!"
+  "Welcome back!": "Willkommen zurück!",
+  "Internationalization": "Internationalisierung",
+  "What is Reactify Boilerplate?": "Was ist Reactify Boilerplate?",
+  "User login/signup is already implemented for you": "Benutzeranmeldung und -anmeldung ist bereits für Sie implementiert",
+  "Includes": "Beinhaltet",
+  "uses": "nutzt",
+  "via": "über",
+  "as a": "als"
 }
