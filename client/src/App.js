@@ -65,8 +65,7 @@ class App extends Component {
         try {
           document.getElementById('content').style.paddingTop = '90px'
         } catch (err) {
-          // Most likely, we're running a test; ignore
-          // I'm sure there's a better way, but it works
+          // Probably testing; ignore
         }
 
         break
@@ -75,7 +74,11 @@ class App extends Component {
 
     // Load particles
     if (ParticlesEnabled) {
-      window.particlesJS('particles', ParticlesConfig)
+      try {
+        window.particlesJS('particles', ParticlesConfig)
+      } catch (err) {
+        // Probably testing; ignore
+      }
     }
   }
 
