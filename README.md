@@ -104,6 +104,8 @@ Edit/add server routes in `server.js` (*look for the comment* `// Setup routes`)
 
 `routes/users/index.js` has examples of how to include routes
 
+See more guides in the [Wiki](https://github.com/mathiscode/reactify-boilerplate/wiki)
+
 ### Running the development environment
 
 ```bash
