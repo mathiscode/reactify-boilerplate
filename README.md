@@ -21,18 +21,18 @@
 ---
 
 - [Why Reactify Boilerplate](#why-reactify-boilerplate)
-  - [Frontend: React](#frontend-react)
-  - [Backend: Restify](#backend-restify)
+    - [Frontend: React](#frontend-react)
+    - [Backend: Restify](#backend-restify)
 - [Installing](#installing)
 - [Configuring](#configuring)
 - [Customizing](#customizing)
-  - [Running the development environment](#running-the-development-environment)
+    - [Running the development environment](#running-the-development-environment)
 - [Testing](#testing)
 - [Building](#building)
 - [Logging](#logging)
-  - [Log to file](#log-to-file)
-  - [Log to Logz.io](#log-to-logzio)
-  - [Log to Loggly](#log-to-loggly)
+    - [Log to file](#log-to-file)
+    - [Log to Logz.io](#log-to-logzio)
+    - [Log to Loggly](#log-to-loggly)
 - [License](#license)
 - [Donate](#donate)
 - [Contributing](#contributing)
@@ -82,6 +82,12 @@ If you're using Windows, you will need to use [Git Bash](https://git-scm.com/dow
 git clone --depth=1 https://github.com/mathiscode/reactify-boilerplate.git
 cd reactify-boilerplate
 yarn # or npm install if you prefer
+```
+
+***Note**: The `master` branch is where development occurs. You may want to checkout a tagged version instead:*
+
+```bash
+git clone --branch [tag] --depth=1 https://github.com/mathiscode/reactify-boilerplate.git
 ```
 
 *If not using yarn, you will see an error that can be ignored, and you will need to `cd client && npm install` and replace `yarn` with `npm run` in the following commands.*
