@@ -12,7 +12,7 @@ import 'animate.css/animate.css'
 import 'particles.js'
 
 import { setProfile } from './redux/actions'
-import { SiteTitle, SiteTheme, NavbarFixed } from './config/site'
+import { SiteTitle, SiteTheme, NavbarFixed, ParticlesEnabled, ParticlesConfig } from './config/site'
 
 // Import Components
 import Login from './components/Login'
@@ -71,6 +71,11 @@ class App extends Component {
 
         break
       default:
+    }
+
+    // Load particles
+    if (ParticlesEnabled) {
+      window.particlesJS('particles', ParticlesConfig)
     }
   }
 
