@@ -11,7 +11,7 @@
 [![Build Status](https://travis-ci.org/mathiscode/reactify-boilerplate.svg?branch=master)](https://travis-ci.org/mathiscode/reactify-boilerplate)
 [![GitHub issues](https://img.shields.io/github/issues/mathiscode/reactify-boilerplate.svg)](https://github.com/mathiscode/reactify-boilerplate/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/mathiscode/reactify-boilerplate/compare)
-[![Hire Me](https://img.shields.io/badge/Hire%20Me-Please!-blue.svg)](https://www.linkedin.com/in/j-r-mathis-472342146/)
+[![Hire Me](https://img.shields.io/badge/Hire%20Me-Please!-blue.svg)](https://www.linkedin.com/in/jrmathis/)
 [![Beerpay](https://beerpay.io/mathiscode/reactify-boilerplate/badge.svg?style=beer-square)](https://beerpay.io/mathiscode/reactify-boilerplate)  [![Beerpay](https://beerpay.io/mathiscode/reactify-boilerplate/make-wish.svg?style=flat-square)](https://beerpay.io/mathiscode/reactify-boilerplate?focus=wish)
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue.svg?style=for-the-badge)](https://reactify-boilerplate.herokuapp.com) ***Note**: The demo runs on a free dyno, so it may take a moment to load after waking up.*
@@ -21,18 +21,18 @@
 ---
 
 - [Why Reactify Boilerplate](#why-reactify-boilerplate)
-    - [Frontend: React](#frontend-react)
-    - [Backend: Restify](#backend-restify)
+  - [Frontend: React](#frontend-react)
+  - [Backend: Restify](#backend-restify)
 - [Installing](#installing)
 - [Configuring](#configuring)
 - [Customizing](#customizing)
-    - [Running the development environment](#running-the-development-environment)
+  - [Running the development environment](#running-the-development-environment)
 - [Testing](#testing)
 - [Building](#building)
 - [Logging](#logging)
-    - [Log to file](#log-to-file)
-    - [Log to Logz.io](#log-to-logzio)
-    - [Log to Loggly](#log-to-loggly)
+  - [Log to file](#log-to-file)
+  - [Log to Logz.io](#log-to-logzio)
+  - [Log to Loggly](#log-to-loggly)
 - [License](#license)
 - [Donate](#donate)
 - [Contributing](#contributing)
