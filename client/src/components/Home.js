@@ -27,13 +27,14 @@ class Home extends Component {
             </p>
             <p>{t('Includes')}:</p>
             <ul>
+              <li><a href='https://getbootstrap.com' target='_blank'>Bootstrap 4</a> ({t('via')} <a href='https://reactstrap.github.io/' target='_blank'>reactstrap</a>)</li>
+              <li><a href='https://bootswatch.com' target='_blank'>Bootswatch Themes</a></li>
               <li><a href='https://reacttraining.com/react-router' target='_blank'>React Router</a></li>
               <li><a href='https://redux.js.org/' target='_blank'>Redux</a></li>
               <li><a href='https://github.com/fkhadra/react-toastify' target='_blank'>React-Toastify</a></li>
-              <li><a href='https://getbootstrap.com' target='_blank'>Bootstrap 4</a> ({t('via')} <a href='https://reactstrap.github.io/' target='_blank'>reactstrap</a>)</li>
-              <li><a href='https://bootswatch.com' target='_blank'>Bootswatch Themes</a></li>
               <li><a href='https://fontawesome.com' target='_blank'>FontAwesome</a></li>
               <li><a href='https://daneden.github.io/animate.css' target='_blank'>Animate.css</a></li>
+              <li><a href='https://github.com/VincentGarreau/particles.js' target='_blank'>Particles.js</a></li>
               <li><a href='https://react.i18next.com' target='_blank'>{t('Internationalization')} ({t('via')} react-i18next)</a></li>
             </ul>
 

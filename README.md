@@ -35,6 +35,7 @@
   - [Log to Loggly](#log-to-loggly)
 - [License](#license)
 - [Donate](#donate)
+- [Contributing](#contributing)
 - [Contributors](#contributors)
 
 ---
@@ -56,6 +57,7 @@ Includes:
 - [React-Toastify](https://github.com/fkhadra/react-toastify)
 - [FontAwesome](https://fontawesome.com)
 - [Animate.css](https://daneden.github.io/animate.css)
+- [Particles.js](https://github.com/VincentGarreau/particles.js)
 - [Internationalization (via react-i18next)](https://react.i18next.com)
 
 ### Backend: Restify
@@ -178,6 +180,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
   ![QR Code](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/mathiscode-btc.png)
 
 - **OR**: Donate some time by submitting a pull request!
+
+## Contributing
+
+Read the [Contribution Guide](https://github.com/mathiscode/reactify-boilerplate/blob/master/CONTRIBUTING.md)
 
 ## Contributors
 

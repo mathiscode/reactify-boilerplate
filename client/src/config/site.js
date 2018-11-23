@@ -9,6 +9,7 @@ export const NavbarDark = true // Is NavbarColor a dark style?
 export const NavbarFixed = 'top' // Where to fix navbar, or false for normal
 
 // Options for Particles.js
+// https://github.com/VincentGarreau/particles.js/#usage
 export const ParticlesEnabled = true
 export const ParticlesConfig = {
   particles: {
