@@ -1,6 +1,6 @@
 {
   "name": "reactify-boilerplate",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A quickstart boilerplate using React & Restify",
   "main": "server.js",
   "homepage": "https://github.com/mathiscode/reactify-boilerplate#readme",
