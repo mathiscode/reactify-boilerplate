@@ -20,6 +20,8 @@ const UserSchema = new mongoose.Schema({
     required: true
   },
 
+  roles: [String],
+
   options: {
     name: String,
     subscribed: {
@@ -28,7 +30,15 @@ const UserSchema = new mongoose.Schema({
     }
   },
 
-  roles: [String]
+  authProviders: {
+    linked: { type: Boolean, default: false },
+    primary: { type: String },
+
+    google: {
+      enabled: { type: Boolean, default: false },
+      account: { type: String }
+    }
+  }
 })
 
 UserSchema.plugin(timestamp)

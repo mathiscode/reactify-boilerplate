@@ -7,5 +7,6 @@
 	"Current password incorrect": "Das aktuelle Passwort ist falsch",
 	"Passwords did not match": "Die Passwörter stimmen nicht überein",
 	"Password successfully updated": "Passwort erfolgreich aktualisiert",
-	"Profile updated successfully": "Profil erfolgreich aktualisiert"
+	"Profile updated successfully": "Profil erfolgreich aktualisiert",
+	"You must login with your linked OAuth provider": "Sie müssen sich bei Ihrem verknüpften OAuth-Anbieter anmelden"
 }
