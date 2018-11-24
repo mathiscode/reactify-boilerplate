@@ -42,9 +42,11 @@ class Navigation extends Component {
     }
 
     // Close menu after link click when collapsed
-    Array.from(document.querySelectorAll('.nav-link')).forEach(link => {
+    const mainNav = document.getElementById('main-nav')
+    Array.from(mainNav.querySelectorAll('*')).forEach(link => {
       link.addEventListener('click', (e) => {
-        if (!anyParentHasClass(e.target, 'language-dropdown')) {
+        // console.log(e.target)
+        if (!anyParentHasClass(e.target, 'dropdown-toggle')) {
           this.setState({ menuOpen: false })
         }
       })
@@ -91,9 +93,9 @@ class Navigation extends Component {
 
             <Nav className='ml-auto' navbar>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle className='language-dropdown' nav caret>
-                  <Icon icon='flag' className='language-dropdown mr-1' />
-                  <span className='language-dropdown d-md-none'>Language</span>
+                <DropdownToggle nav caret>
+                  <Icon icon='flag' className='mr-1' />
+                  <span className='d-md-none'>Language</span>
                 </DropdownToggle>
                 <DropdownMenu className='main-nav-dropdown' right>
                   <NavLink onClick={() => this.changeLanguage('en')}>
@@ -133,28 +135,25 @@ class Navigation extends Component {
 
               {
                 this.props.user.loggedIn && (
-                  <div>
-                    <UncontrolledDropdown nav inNavbar>
-                      <DropdownToggle nav caret>
-                        <Icon icon='user-circle' size='lg' className='mr-1' />
-                        { this.props.user.profile && <span>{this.props.user.profile.email}</span> }
-                      </DropdownToggle>
-                      <DropdownMenu right>
-                        <Link to='/profile'>
-                          <DropdownItem active={this.props.location.pathname === '/profile'}>
-                            {t('My Profile')}
-                          </DropdownItem>
-                        </Link>
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                      <Icon icon='user-circle' size='lg' className='mr-1' />
+                      { this.props.user.profile && <span>{this.props.user.profile.email}</span> }
+                    </DropdownToggle>
+                    <DropdownMenu right>
+                      <DropdownItem tag={Link} to='/profile' active={this.props.location.pathname === '/profile'}>
+                        <Icon icon='user' className='mr-1' />
+                        <span>{t('My Profile')}</span>
+                      </DropdownItem>
 
-                        <DropdownItem divider />
+                      <DropdownItem divider />
 
-                        <DropdownItem onClick={this.logout}>
-                          <Icon icon='sign-out-alt' className='mr-1' />
-                          {t('Logout')}
-                        </DropdownItem>
-                      </DropdownMenu>
-                    </UncontrolledDropdown>
-                  </div>
+                      <DropdownItem onClick={this.logout}>
+                        <Icon icon='sign-out-alt' className='mr-1' />
+                        <span>{t('Logout')}</span>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
                 )
               }
             </Nav>

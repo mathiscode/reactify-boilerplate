@@ -26,13 +26,6 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
-  a {
-    &:hover {
-      /* Yes, this is !important. Yes, it's bad practice. Yes, it makes life easier. */
-      text-decoration: none !important;
-    }
-  }
-
   #particles {
     position: fixed;
     top: 0;

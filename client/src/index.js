@@ -25,6 +25,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/index.scss'
 
 // Setup global styles with styled components
+// Some of these break the styled-components convention, but it keeps things DRY
 import GlobalStyle from './style.js'
 
 ReactDOM.render(
