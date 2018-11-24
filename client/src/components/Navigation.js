@@ -139,7 +139,7 @@ class Navigation extends Component {
                         <Icon icon='user-circle' size='lg' className='mr-1' />
                         { this.props.user.profile && <span>{this.props.user.profile.email}</span> }
                       </DropdownToggle>
-                      <DropdownMenu className='main-nav-dropdown' right>
+                      <DropdownMenu right>
                         <Link to='/profile'>
                           <DropdownItem active={this.props.location.pathname === '/profile'}>
                             {t('My Profile')}

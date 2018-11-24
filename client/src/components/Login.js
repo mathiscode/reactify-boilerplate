@@ -5,6 +5,7 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { toast } from 'react-toastify'
 import { withNamespaces } from 'react-i18next'
 import axios from 'axios'
+import styled from 'styled-components/macro'
 
 import { setToken, setLoggedIn, setLoggedOut, setProfile } from '../redux/actions'
 import { checkToken, updateToken } from '../lib/helpers'
@@ -21,6 +22,12 @@ import {
   Input,
   Label
 } from 'reactstrap'
+
+const StyledLogin = styled.div`
+  min-width: 250px;
+  max-width: 500px;
+  margin: auto;
+`
 
 class Login extends Component {
   state = {}
@@ -62,15 +69,15 @@ class Login extends Component {
     const { t } = this.props
 
     return (
-      <div style={{ maxWidth: 500, margin: 'auto' }}>
+      <StyledLogin>
         { this.props.user.loggedIn && <Redirect to='/' /> }
 
         <Form onSubmit={this.submitLogin}>
           <Card>
             <CardHeader>
               <h3>
-                <Icon icon='sign-in-alt' />
-                <span className='ml-2'>{t('Login')}</span>
+                <Icon icon='sign-in-alt' className='mr-2' />
+                {t('Login')}
               </h3>
             </CardHeader>
             <CardBody>
@@ -110,7 +117,7 @@ class Login extends Component {
             </CardFooter>
           </Card>
         </Form>
-      </div>
+      </StyledLogin>
     )
   }
 }
