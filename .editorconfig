@@ -16,10 +16,10 @@ insert_final_newline = true
 indent_size = 2
 
 [*.html]
-indent_style = tab
+indent_style = space
 
 [*.{py,html,md}]
-indent_size = 4
+indent_size = 2
 
 [*.md]
 trim_trailing_whitespace = false
