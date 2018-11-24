@@ -102,6 +102,8 @@ Edit `.env` for server configuration
 
 Edit `client/src/config/site.js` for client configuration
 
+Edit `client/src/config/keys.js` for client-side API keys (*eg. Google OAuth*)
+
 ## Customizing
 
 Edit/add client components in `client/src/components`
