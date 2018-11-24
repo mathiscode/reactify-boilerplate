@@ -23,7 +23,6 @@
     "test-client": "npm test --prefix client",
     "test": "npm run lint && npm run test-server && npm run test-client",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --exit test/ -x *.test.js",
-    "sync-demo": "git checkout demo && git merge master && git push && git checkout master",
     "release-patch": "yarn version --cwd client --patch --no-git-tag-version --no-commit-hooks && git add . && git commit -m \"version bump\" && yarn version --patch && git push --follow-tags",
     "release-minor": "yarn version --cwd client --minor --no-git-tag-version --no-commit-hooks && git add . && git commit -m \"version bump\" && yarn version --minor && git push --follow-tags",
     "release-major": "yarn version --cwd client --major --no-git-tag-version --no-commit-hooks && git add . && git commit -m \"version bump\" && yarn version --major && git push --follow-tags"
