@@ -58,6 +58,7 @@ Includes:
 - [Animate.css](https://daneden.github.io/animate.css)
 - [Particles.js](https://github.com/VincentGarreau/particles.js)
 - [Internationalization (via react-i18next)](https://react.i18next.com)
+- Local & Google OAuth login/signup
 
 ### Backend: Restify
 
