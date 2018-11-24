@@ -2,4 +2,4 @@
 // https://developers.google.com/identity/protocols/OAuth2
 
 export const GoogleLoginEnabled = true
-export const GoogleClientID = '1023886367889-24og77fi0np40arss2cu724jvcfrh2p5.apps.googleusercontent.com'
+export const GoogleClientID = '387381289864-1fli2dre6kcf62n9hr4nda8l59tdetgl.apps.googleusercontent.com'
