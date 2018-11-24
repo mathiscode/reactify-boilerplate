@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
-import './styles/index.scss'
 import './lib/i18n'
 
 import App from './App'
@@ -18,13 +17,22 @@ To hardcode a theme and improve performance:
   set SiteTheme to false in config/site.js
   then use import 'bootswatch/dist/[theme]/bootstrap.min.css' below
 */
-
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import 'bootswatch/dist/[theme]/bootstrap.min.css'
 
+// Generally, you should stick to styled components,
+// but if you prefer to use SASS, it's included for you here:
+import './styles/index.scss'
+
+// Setup global styles with styled components
+import GlobalStyle from './style.js'
+
 ReactDOM.render(
   <Provider store={Store}>
-    <App />
+    <React.Fragment>
+      <GlobalStyle />
+      <App />
+    </React.Fragment>
   </Provider>,
 
   document.getElementById('root')

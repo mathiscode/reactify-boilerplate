@@ -5,6 +5,7 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { toast } from 'react-toastify'
 import { withNamespaces } from 'react-i18next'
 import axios from 'axios'
+import styled from 'styled-components/macro'
 
 import { checkToken, updateToken } from '../lib/helpers'
 import { setToken, setLoggedIn, setLoggedOut, setProfile } from '../redux/actions'
@@ -21,6 +22,12 @@ import {
   Input,
   Label
 } from 'reactstrap'
+
+const StyledSignup = styled.div`
+  min-width: 250px;
+  max-width: 500px;
+  margin: auto;
+`
 
 class Signup extends Component {
   state = {}
@@ -64,15 +71,15 @@ class Signup extends Component {
     const { t } = this.props
 
     return (
-      <div style={{ maxWidth: 500, margin: 'auto' }}>
+      <StyledSignup>
         { this.state.signupComplete && <Redirect to='/' /> }
 
         <Form onSubmit={this.submitSignup}>
           <Card>
             <CardHeader>
               <h3>
-                <Icon icon='user-plus' />
-                <span className='ml-2'>{t('Signup')}</span>
+                <Icon icon='user-plus' className='mr-2' />
+                {t('Signup')}
               </h3>
             </CardHeader>
             <CardBody>
@@ -118,7 +125,7 @@ class Signup extends Component {
             </CardFooter>
           </Card>
         </Form>
-      </div>
+      </StyledSignup>
     )
   }
 }

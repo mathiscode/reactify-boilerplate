@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { library as IconLibrary } from '@fortawesome/fontawesome-svg-core'
 import { connect } from 'react-redux'
 import { ToastContainer, toast } from 'react-toastify'
 import i18n from 'i18next'
 import axios from 'axios'
+import styled from 'styled-components/macro'
 
+import { setProfile } from './redux/actions'
+import { SiteTitle, SiteTheme, NavbarFixed, ParticlesEnabled, ParticlesConfig } from './config/site'
+
+// Import some extra third-party stuff
 import 'react-toastify/dist/ReactToastify.css'
 import 'animate.css/animate.css'
 import 'particles.js'
 
-import { setProfile } from './redux/actions'
-import { SiteTitle, SiteTheme, NavbarFixed, ParticlesEnabled, ParticlesConfig } from './config/site'
+// Setup icon library
+import './config/icons.js'
 
 // Import Components
 import Login from './components/Login'
@@ -21,37 +25,14 @@ import Navigation from './components/Navigation'
 import Home from './components/Home'
 import Profile from './components/Profile'
 
-// Setup icon library
-import {
-  faSpinner,
-  faHome,
-  faAtlas,
-  faSignInAlt,
-  faUserPlus,
-  faSignOutAlt,
-  faExclamationTriangle,
-  faUserCircle,
-  faFlag
-} from '@fortawesome/free-solid-svg-icons'
-
-import {
-  faGithub
-} from '@fortawesome/free-brands-svg-icons'
-
-IconLibrary.add(
-  faSpinner,
-  faHome,
-  faAtlas,
-  faSignInAlt,
-  faSignOutAlt,
-  faUserPlus,
-  faExclamationTriangle,
-  faUserCircle,
-  faGithub,
-  faFlag
-)
+const Content = styled.div`
+  padding: 30px;
+  padding-top: ${props => NavbarFixed ? `${props.navbarHeight + 30}px` : '30px'};
+`
 
 class App extends Component {
+  state = {}
+
   componentWillMount = () => {
     // Request appropriate language from backend
     axios.defaults.headers.common['Accept-Language'] = i18n.language || 'en'
@@ -59,26 +40,17 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    // Adjust padding for fixed navbars
-    switch (NavbarFixed) {
-      case 'top':
-        try {
-          document.getElementById('content').style.paddingTop = '90px'
-        } catch (err) {
-          // Probably testing; ignore
-        }
+    try {
+      // Get fixed navbar height
+      const navbarHeight = document.getElementById('main-nav').clientHeight
+      this.setState({ navbarHeight })
 
-        break
-      default:
-    }
-
-    // Load particles
-    if (ParticlesEnabled) {
-      try {
+      // Load particles
+      if (ParticlesEnabled) {
         window.particlesJS('particles', ParticlesConfig)
-      } catch (err) {
-        // Probably testing; ignore
       }
+    } catch (err) {
+      // If this fails, we're probably inside of a test; ignore
     }
   }
 
@@ -93,12 +65,12 @@ class App extends Component {
         <Router>
           <React.Fragment>
             <Navigation />
-            <div id='content'>
+            <Content navbarHeight={this.state.navbarHeight}>
               <Route path='/' exact component={Home} />
               <Route path='/profile' component={Profile} />
               <Route path='/login' component={Login} />
               <Route path='/signup' component={Signup} />
-            </div>
+            </Content>
           </React.Fragment>
         </Router>
 

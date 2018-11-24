@@ -3,9 +3,16 @@ import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { withNamespaces } from 'react-i18next'
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import axios from 'axios'
 
 import Loading from './Loading'
+
+import {
+  Card,
+  CardBody,
+  CardHeader
+} from 'reactstrap'
 
 class Profile extends Component {
   state = {
@@ -29,15 +36,25 @@ class Profile extends Component {
   }
 
   render () {
+    const { t } = this.props
+
     if (!this.props.user.loggedIn) return <Redirect to='/' />
 
     return (
-      <div style={{ padding: 50 }}>
-        {
-          this.state.loading ? <Loading className='supercenter' />
-            : <pre>{JSON.stringify(this.state.profile, null, 2)}</pre>
-        }
-      </div>
+      <Card>
+        <CardHeader>
+          <h3>
+            <Icon icon='user' className='mr-2' />
+            {t('My Profile')}
+          </h3>
+        </CardHeader>
+        <CardBody>
+          {
+            this.state.loading ? <Loading color='#333' />
+              : <pre>{JSON.stringify(this.state.profile, null, 2)}</pre>
+          }
+        </CardBody>
+      </Card>
     )
   }
 }
