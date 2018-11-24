@@ -98,7 +98,7 @@ git clone --branch [tag] --depth=1 https://github.com/mathiscode/reactify-boiler
 cp .env.example .env
 ```
 
-Edit `.env` for server configuration
+Edit `.env` or set environment variables for server configuration
 
 Edit `client/src/config/site.js` for client configuration
 
