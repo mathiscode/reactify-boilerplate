@@ -42,15 +42,19 @@ class Navigation extends Component {
     }
 
     // Close menu after link click when collapsed
-    const mainNav = document.getElementById('main-nav')
-    Array.from(mainNav.querySelectorAll('*')).forEach(link => {
-      link.addEventListener('click', (e) => {
-        // console.log(e.target)
-        if (!anyParentHasClass(e.target, 'dropdown-toggle')) {
-          this.setState({ menuOpen: false })
-        }
+    try {
+      const mainNav = document.getElementById('main-nav')
+      Array.from(mainNav.querySelectorAll('*')).forEach(link => {
+        link.addEventListener('click', (e) => {
+          // console.log(e.target)
+          if (!anyParentHasClass(e.target, 'dropdown-toggle')) {
+            this.setState({ menuOpen: false })
+          }
+        })
       })
-    })
+    } catch (err) {
+      // Probably testing; ignore
+    }
   }
 
   changeLanguage = (lang) => {

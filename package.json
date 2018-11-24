@@ -21,11 +21,17 @@
     "lint": "standard -v",
     "test": "npm run lint && npm run test-server && npm run test-client",
     "test-server": "mocha --exit",
-    "test-client": "npm test --prefix client",
+    "test-client": "cross-env CI=true npm test --prefix client",
+    "test-client-watch": "npm test --prefix client",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --exit test/ -x *.test.js",
     "release-patch": "yarn version --cwd client --patch --no-git-tag-version --no-commit-hooks && git add . && git commit -m \"version bump\" && yarn version --patch && git push --follow-tags",
     "release-minor": "yarn version --cwd client --minor --no-git-tag-version --no-commit-hooks && git add . && git commit -m \"version bump\" && yarn version --minor && git push --follow-tags",
     "release-major": "yarn version --cwd client --major --no-git-tag-version --no-commit-hooks && git add . && git commit -m \"version bump\" && yarn version --major && git push --follow-tags"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   },
   "cacheDirectories": [
     "node_modules",
@@ -69,12 +75,14 @@
     "babel-eslint": "9.0.0",
     "chai": "^4.2.0",
     "concurrently": "^4.0.1",
+    "cross-env": "^5.2.0",
     "eslint": "5.6.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
+    "husky": "^1.2.0",
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.6",
