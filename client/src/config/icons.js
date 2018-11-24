@@ -14,7 +14,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
-  faGithub
+  faGithub,
+  faGoogle
 } from '@fortawesome/free-brands-svg-icons'
 
 IconLibrary.add(
@@ -28,5 +29,6 @@ IconLibrary.add(
   faExclamationTriangle,
   faUserCircle,
   faGithub,
+  faGoogle,
   faFlag
 )

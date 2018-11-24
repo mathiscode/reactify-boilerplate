@@ -19,6 +19,12 @@
     },
     "YARN_PRODUCTION": {
       "required": true
+    },
+    "USE_GOOGLE_OAUTH": {
+      "required": true
+    },
+    "GOOGLE_OAUTH_CLIENT_ID": {
+      "required": true
     }
   },
   "formation": {

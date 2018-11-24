@@ -4,13 +4,16 @@ import { Redirect, withRouter } from 'react-router-dom'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { toast } from 'react-toastify'
 import { withNamespaces } from 'react-i18next'
+import { GoogleLogin } from 'react-google-login'
 import axios from 'axios'
 import styled from 'styled-components/macro'
 
-import { checkToken, updateToken } from '../lib/helpers'
 import { setToken, setLoggedIn, setLoggedOut, setProfile } from '../redux/actions'
+import { checkToken, updateToken } from '../lib/helpers'
+import { GoogleLoginEnabled, GoogleClientID } from '../config/keys'
 
 import {
+  Alert,
   Button,
   Card,
   CardBody,
@@ -42,6 +45,7 @@ class Signup extends Component {
 
     this.setState({
       signupInProgress: true,
+      signupError: false,
       signupEmailError: false,
       signupPasswordError: false,
       signupConfirmPasswordError: false
@@ -60,11 +64,28 @@ class Signup extends Component {
         this.props.setProfile(results.data.user)
         toast.success(t('Thanks for joining us!'))
       } catch (err) {
-        console.log(err)
         console.error(err.response)
         this.setState({ signupInProgress: false, ...err.response.data.errors })
       }
     })
+  }
+
+  googleOauth = async response => {
+    const { t } = this.props
+
+    try {
+      let results = await axios.post('/api/users/oauth/google', { idToken: response.tokenId })
+
+      // All is well; save the new token
+      // TODO: Not DRY, fix later
+      updateToken(this, results.data.token, results.data.exp)
+      this.setState({ signupInProgress: false, signupComplete: true })
+      this.props.setProfile(results.data.user)
+      toast.success(t('Thanks for joining us!'))
+    } catch (err) {
+      console.error(err.response)
+      this.setState({ signupInProgress: false, signupError: `${err.response.data.code} error` })
+    }
   }
 
   render () {
@@ -74,15 +95,47 @@ class Signup extends Component {
       <StyledSignup>
         { this.state.signupComplete && <Redirect to='/' /> }
 
-        <Form onSubmit={this.submitSignup}>
-          <Card>
-            <CardHeader>
-              <h3>
-                <Icon icon='user-plus' className='mr-2' />
-                {t('Signup')}
-              </h3>
-            </CardHeader>
-            <CardBody>
+        <Card>
+          <CardHeader>
+            <h3>
+              <Icon icon='user-plus' className='mr-2' />
+              {t('Signup')}
+            </h3>
+          </CardHeader>
+          <CardBody>
+            {
+              GoogleLoginEnabled &&
+              <GoogleLogin
+                clientId={GoogleClientID}
+                onSuccess={this.googleOauth}
+                onFailure={this.googleOauth}
+                render={props => (
+                  <Button
+                    block outline color='primary' size='lg'
+                    disabled={this.state.signupInProgress}
+                    onClick={event => {
+                      this.setState({ signupInProgress: true })
+                      props.onClick()
+                    }}
+                  >
+                    {
+                      this.state.signupInProgress ? (<Icon spin icon='spinner' />) : (
+                        <React.Fragment>
+                          <Icon icon={['fab', 'google']} className='mr-2' />
+                          Signup with Google
+                        </React.Fragment>
+                      )
+                    }
+                  </Button>
+                )}
+              />
+            }
+
+            {
+              GoogleLoginEnabled && <hr />
+            }
+
+            <Form onSubmit={this.submitSignup}>
               <FormGroup>
                 <Label for='loginEmail'>{t('Email Address')}</Label>
                 <Input
@@ -117,14 +170,26 @@ class Signup extends Component {
                 />
                 <FormText color='danger'>{this.state.signupConfirmPasswordError}</FormText>
               </FormGroup>
-            </CardBody>
-            <CardFooter className='text-right'>
-              <Button block color='primary' size='lg' disabled={this.state.signupInProgress}>
-                {this.state.signupInProgress ? (<Icon spin icon='spinner' />) : t('Signup')}
-              </Button>
-            </CardFooter>
-          </Card>
-        </Form>
+            </Form>
+
+            {
+              this.state.signupError && (
+                <Alert color='danger'>
+                  <Icon icon='exclamation-triangle' />
+                  <span className='ml-2'>{t(this.state.signupError)}</span>
+                </Alert>
+              )
+            }
+          </CardBody>
+          <CardFooter className='text-right'>
+            <Button block color='primary' size='lg'
+              disabled={this.state.signupInProgress}
+              onClick={this.submitSignup}
+            >
+              {this.state.signupInProgress ? (<Icon spin icon='spinner' />) : t('Signup')}
+            </Button>
+          </CardFooter>
+        </Card>
       </StyledSignup>
     )
   }

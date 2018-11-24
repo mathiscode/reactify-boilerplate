@@ -35,6 +35,7 @@ server
       .unless({
         path: [
           /^\/(?!api)/,
+          /^\/api\/users\/oauth\/.*/,
           '/api/users/login',
           '/api/users/signup'
         ]
