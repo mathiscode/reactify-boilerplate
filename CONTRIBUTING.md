@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions are gratefully welcome!
+Contributions are gratefully accepted!
 
 By contributing to reactify-boilerplate, you agree to abide by the [code of conduct](https://github.com/mathiscode/reactify-boilerplate/blob/master/CODE_OF_CONDUCT.md).
 
