@@ -70,6 +70,8 @@ class Login extends Component {
   googleOauth = async response => {
     const { t } = this.props
 
+    console.log(response)
+
     try {
       let results = await axios.post('/api/users/oauth/google', { idToken: response.tokenId })
 
