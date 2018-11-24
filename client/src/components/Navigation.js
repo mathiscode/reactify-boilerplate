@@ -103,14 +103,14 @@ class Navigation extends Component {
                 </DropdownToggle>
                 <DropdownMenu className='main-nav-dropdown' right>
                   <NavLink onClick={() => this.changeLanguage('en')}>
-                    <DropdownItem className={this.state.language === 'en' ? 'active' : ''}>
+                    <DropdownItem className={i18n.language === 'en' ? 'active' : ''}>
                       <CountryFlag code='us' svg />
                       <span className='ml-2'>{t('English')}</span>
                     </DropdownItem>
                   </NavLink>
 
                   <NavLink onClick={() => this.changeLanguage('de')}>
-                    <DropdownItem className={this.state.language === 'de' ? 'active' : ''}>
+                    <DropdownItem className={i18n.language === 'de' ? 'active' : ''}>
                       <CountryFlag code='de' svg />
                       <span className='ml-2'>{t('Deutsch')}</span>
                     </DropdownItem>

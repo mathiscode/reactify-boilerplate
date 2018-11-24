@@ -5,6 +5,7 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { toast } from 'react-toastify'
 import { withNamespaces } from 'react-i18next'
 import { GoogleLogin } from 'react-google-login'
+import i18n from 'i18next'
 import axios from 'axios'
 import styled from 'styled-components/macro'
 
@@ -70,13 +71,14 @@ class Login extends Component {
   googleOauth = async response => {
     const { t } = this.props
 
-    console.log(response)
+    // console.log(response)
 
     try {
       let results = await axios.post('/api/users/oauth/google', { idToken: response.tokenId })
 
       // All is well; save the new token
       // TODO: Not DRY, fix later
+      if (results.data.locale) i18n.changeLanguage(results.data.locale)
       this.setState({ loginInProgress: false })
       updateToken(this, results.data.token, results.data.exp)
       this.props.setProfile(results.data.user)
@@ -121,7 +123,7 @@ class Login extends Component {
                       this.state.loginInProgress ? (<Icon spin icon='spinner' />) : (
                         <React.Fragment>
                           <Icon icon={['fab', 'google']} className='mr-2' />
-                          Login with Google
+                          {t('Login with Google')}
                         </React.Fragment>
                       )
                     }

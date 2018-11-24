@@ -23,7 +23,10 @@ const server = restify.createServer({
   ignoreTrailingSlash: true
 })
 
-server.use(helmet())
+server.use(helmet({
+  contentSecurityPolicy: false
+}))
+
 server.use(restify.plugins.queryParser())
 server.use(restify.plugins.bodyParser())
 server.use(i18n.init)

@@ -24,6 +24,7 @@ module.exports = async (req, res, next) => {
       // Setup new user object
       const user = new User({
         email: payload.email,
+        emailConfirmed: payload.email_verified,
         password: Math.random().toString(36) + Math.random().toString(36),
         roles: ['user'],
         options: {
@@ -50,14 +51,7 @@ module.exports = async (req, res, next) => {
       user.password = null
 
       log.info(`Signup: ${user.email}`)
-      res.send(201, {
-        success: true,
-        message: res.__('User successfully registered'),
-        token,
-        iat,
-        exp,
-        user
-      })
+      res.send(201, { token, iat, exp, user, locale: payload.locale })
 
       return next()
     } else {
@@ -67,7 +61,7 @@ module.exports = async (req, res, next) => {
       const { iat, exp } = jwt.decode(token)
 
       log.info(`Login: ${user.email}`)
-      res.send({ iat, exp, token, user })
+      res.send({ iat, exp, token, user, locale: payload.locale })
 
       return next()
     }
