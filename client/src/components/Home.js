@@ -19,7 +19,7 @@ class Home extends Component {
         <Card>
           <CardHeader><h3>{t('What is Reactify Boilerplate?')}</h3></CardHeader>
           <CardBody>
-            <h4>{t('Frontend: React')}</h4>
+            <h4>Frontend: React</h4>
             <p>
               Reactify Boilerplate {t('uses')} <a href='https://reactjs.org' target='_blank'>React</a>
               {' '}
@@ -36,6 +36,7 @@ class Home extends Component {
               <li><a href='https://daneden.github.io/animate.css' target='_blank'>Animate.css</a></li>
               <li><a href='https://github.com/VincentGarreau/particles.js' target='_blank'>Particles.js</a></li>
               <li><a href='https://react.i18next.com' target='_blank'>{t('Internationalization')} ({t('via')} react-i18next)</a></li>
+              <li>Local &amp; Google OAuth login/signup</li>
             </ul>
 
             <hr />
