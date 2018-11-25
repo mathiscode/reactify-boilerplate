@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD034 MD036 -->
+<!-- markdownlint-disable MD033 MD034 MD036 -->
 
 # ![Reactify Boilerplate](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/logo.png) <!-- omit in toc -->
 
@@ -16,6 +16,12 @@
 [![Beerpay](https://beerpay.io/mathiscode/reactify-boilerplate/badge.svg?style=beer-square)](https://beerpay.io/mathiscode/reactify-boilerplate)  [![Beerpay](https://beerpay.io/mathiscode/reactify-boilerplate/make-wish.svg?style=flat-square)](https://beerpay.io/mathiscode/reactify-boilerplate?focus=wish)
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue.svg?style=for-the-badge)](http://reactify-boilerplate.mathis.network)
+
+---
+
+<div align="center">
+  <img alt="Screenshot" src="https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/screenshot.png">
+</div>
 
 ---
 
