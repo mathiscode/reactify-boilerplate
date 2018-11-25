@@ -96,7 +96,7 @@ yarn # or npm install if you prefer
 git clone --branch [tag] --depth=1 https://github.com/mathiscode/reactify-boilerplate.git
 ```
 
-*If not using yarn, you will see an error that can be ignored, and you will need to `cd client && npm install` and replace `yarn` with `npm run` in the following commands.*
+*If not using yarn, you will see an error that can be ignored, and you will need to `cd client && npm install` and replace `yarn` with `npm run` in the following commands.* **TL;DR: Just use [Yarn](https://yarnpkg.com/en/docs/install).**
 
 ## Configuring
 
