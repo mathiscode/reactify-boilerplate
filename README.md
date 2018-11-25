@@ -3,8 +3,8 @@
 # ![Reactify Boilerplate](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/logo.png) <!-- omit in toc -->
 
 > “This is what I have learned, Malenfant. This is how it is, how it was, how it came to be.”
-
-*― Stephen Baxter, Manifold: Time*
+> 
+> *― Stephen Baxter, Manifold: Time*
 
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Reactify%20Boilerplate&url=https://github.com/mathiscode/reactify-boilerplate&hashtags=react,restify,nodejs,javascript,bootstrap,developers) *Help spread the word and share this project!*  
 [![GitHub license](https://img.shields.io/github/license/mathiscode/reactify-boilerplate.svg)](https://github.com/mathiscode/reactify-boilerplate/blob/master/LICENSE.md)
