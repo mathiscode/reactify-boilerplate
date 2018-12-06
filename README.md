@@ -2,11 +2,6 @@
 
 # ![Reactify Boilerplate](https://github.com/mathiscode/reactify-boilerplate/blob/master/.github/logo.png) <!-- omit in toc -->
 
-> “This is what I have learned, Malenfant. This is how it is, how it was, how it came to be.”
->  
-> *― Stephen Baxter, Manifold: Time*
-
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Reactify%20Boilerplate&url=https://github.com/mathiscode/reactify-boilerplate&hashtags=react,restify,nodejs,javascript,bootstrap,developers) *Help spread the word and share this project!*  
 [![GitHub license](https://img.shields.io/github/license/mathiscode/reactify-boilerplate.svg)](https://github.com/mathiscode/reactify-boilerplate/blob/master/LICENSE.md)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Build Status](https://travis-ci.org/mathiscode/reactify-boilerplate.svg?branch=master)](https://travis-ci.org/mathiscode/reactify-boilerplate)
@@ -14,6 +9,12 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/mathiscode/reactify-boilerplate/compare)
 [![Hire Me](https://img.shields.io/badge/Hire%20Me-Please!-blue.svg)](https://www.linkedin.com/in/jrmathis/)
 [![Beerpay](https://beerpay.io/mathiscode/reactify-boilerplate/badge.svg?style=beer-square)](https://beerpay.io/mathiscode/reactify-boilerplate)  [![Beerpay](https://beerpay.io/mathiscode/reactify-boilerplate/make-wish.svg?style=flat-square)](https://beerpay.io/mathiscode/reactify-boilerplate?focus=wish)
+
+> “This is what I have learned, Malenfant. This is how it is, how it was, how it came to be.”
+>  
+> *― Stephen Baxter, Manifold: Time*
+
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Reactify%20Boilerplate&url=https://github.com/mathiscode/reactify-boilerplate&hashtags=react,restify,nodejs,javascript,bootstrap,developers) *Help spread the word and share this project!*  
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue.svg?style=for-the-badge)](http://reactify-boilerplate.mathis.network)
 
