@@ -81,21 +81,13 @@ Includes:
 
 For best results, you should have [Yarn](https://yarnpkg.com/en/docs/install) installed.
 
-If you're using Windows, you will need to use [Git Bash](https://git-scm.com/download/win) for commands to be successful.
+You'll probably want to [use this repository as a template](https://github.com/mathiscode/reactify-boilerplate/generate), then replace the clone URL and directory name below.
 
-```bash
-git clone --depth=1 https://github.com/mathiscode/reactify-boilerplate.git
+```sh
+git clone https://github.com/mathiscode/reactify-boilerplate.git
 cd reactify-boilerplate
-yarn # or npm install if you prefer
+yarn
 ```
-
-***Note**: The `master` branch is where development occurs. You may want to checkout a tagged version instead:*
-
-```bash
-git clone --branch [tag] --depth=1 https://github.com/mathiscode/reactify-boilerplate.git
-```
-
-*If not using yarn, you will see an error that can be ignored, and you will need to `cd client && npm install` and replace `yarn` with `npm run` in the following commands.* **TL;DR: Just use [Yarn](https://yarnpkg.com).**
 
 ## Configuring
 
