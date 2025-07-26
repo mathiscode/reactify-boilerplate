@@ -69,8 +69,8 @@
     "restify-jwt-community": "^1.0.8",
     "validator": "^10.9.0",
     "winston": "^3.1.0",
-    "winston-loggly-bulk": "https://github.com/loggly/winston-loggly-bulk.git#3.x",
-    "winston-logzio": "^3.0.2"
+    "winston-loggly-bulk": "3.3.0",
+    "winston-logzio": "^5.0.4"
   },
   "devDependencies": {
     "babel-eslint": "9.0.0",
