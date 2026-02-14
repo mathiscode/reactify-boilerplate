@@ -58,7 +58,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^6.1.0",
-    "google-auth-library": "^2.0.1",
+    "google-auth-library": "^3.0.0",
     "helmet": "^3.15.0",
     "i18n": "^0.8.3",
     "jsonwebtoken": "^8.3.0",
@@ -69,8 +69,8 @@
     "restify-jwt-community": "^1.0.8",
     "validator": "^10.9.0",
     "winston": "^3.1.0",
-    "winston-loggly-bulk": "https://github.com/loggly/winston-loggly-bulk.git#3.x",
-    "winston-logzio": "^3.0.2"
+    "winston-loggly-bulk": "3.3.0",
+    "winston-logzio": "^5.0.4"
   },
   "devDependencies": {
     "babel-eslint": "9.0.0",
